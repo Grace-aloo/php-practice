@@ -21,8 +21,8 @@ print_r($array) . "<br>";
 echo $array[0] . "<br>";
 
 //2nd way to make arrays
-$array2 = "some";
-$array2 = "thing";
+$array2[] = "some";
+$array2[] = "thing";
 
 print_r($array2);
 
@@ -53,5 +53,20 @@ switch($number){
     default:
          echo "no idea";    
 };
-echo "<br>"
+echo "<br>";
+//for loops
+for($i = 1; $i <= 10; $i++){
+    echo "$i <br>";
+};
+//foreach loops
+foreach($array as $key =>$data){
+    echo "$key: $data <br>";
+};
+//while loops
+$i = 0;
+while ($i < 20){
+    echo "$i before <br>";
+    $i++;
+    echo "$i after <br>";
+};
 ?>
