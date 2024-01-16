@@ -67,6 +67,16 @@ $i = 0;
 while ($i < 20){
     echo "$i before <br>";
     $i++;
-    echo "$i after <br>";
 };
+
+
+//GET variables
+print_r($_GET);
+
+
 ?>
+
+<form method="get" action="">
+ <label> "Search" </label>
+ <input type="search" name="s">
+</form>
